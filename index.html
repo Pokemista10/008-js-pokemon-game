@@ -17,13 +17,25 @@
 
     document.onkeydown = (event) => {
       console.log(event.code)
-      if (event.code == "ArrowUp"){
+      if (event.code == "Space"){
         character.classList.add('jump')
         setTimeout( () => {
           character.classList.remove('jump')
         }, 2000 )
       }
     }
+    
+    const character = document.querySelector('.character')
+
+document.onkeydown = (event) => {
+  console.log(event.code)
+  if (event.code == "Space"){
+    character.classList.add('Bullet')
+    setTimeout( () => {
+      character.classList.remove('Bullet')
+    }, 2000 )
+  }
+}
   </script>
 </body>
 </html>
