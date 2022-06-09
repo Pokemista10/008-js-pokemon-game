@@ -10,6 +10,7 @@
 <body>
 
   <div class="character"></div>
+  <div class="bullet"></div>
   
 
   <script>
@@ -21,21 +22,17 @@
         character.classList.add('jump')
         setTimeout( () => {
           character.classList.remove('jump')
-        }, 2000 )
+        }, 5000 )
+      }
+      if (event.code == "ArrowUp"){
+        character.classList.add('power')
+        setTimeout( () => {
+          character.classList.remove('power')
+        }, 4000 )
       }
     }
     
-    const character = document.querySelector('.character')
-
-document.onkeydown = (event) => {
-  console.log(event.code)
-  if (event.code == "Space"){
-    character.classList.add('Bullet')
-    setTimeout( () => {
-      character.classList.remove('Bullet')
-    }, 2000 )
-  }
-}
+ 
   </script>
 </body>
 </html>

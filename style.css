@@ -13,10 +13,35 @@ body{
   background-size: cover;
 }
 
-.jump{
-  animation: jump 1000ms forwards;
+.bullet{
+  width: 250px;
+  height: 150px;
+  position:absolute;
+  bottom: 20%;
+  left: 90%;
+  background-image: url('supermariobullet.png');
+  background-size: cover;
+  animation: bullet 10s infinite ;
 }
 
+.power{
+  animation: power 4000ms forwards;
+}
+
+@keyframes power {
+  0%{
+    width: 500px;
+    height: 500px;
+  }
+  100{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.jump{
+  animation: jump 5s forwards;
+}
 
 @keyframes  jump {
     0%{
@@ -35,22 +60,13 @@ body{
     }
 }
 
-.Bullet{
-  animation: Bullet 1000ms forwards;
+@keyframes  bullet {
+  0%{
+    background-image: url(supermariobullet.png);
+  }
+
+  100%{
+left: -20%;
+  }
 }
 
-
-@keyframes  jump {
-    0%{
-
-    }
-  50%{
-
-    }
-    95%{
-
-    }
-    100%{
-
-    }
-}
