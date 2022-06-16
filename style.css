@@ -33,7 +33,7 @@ body{
     width: 500px;
     height: 500px;
   }
-  100{
+  100%{
     width: 200px;
     height: 200px;
   }
@@ -41,6 +41,14 @@ body{
 
 .jump{
   animation: jump 5s forwards;
+}
+
+.sprintleft{
+  animation: sprintleft 5 forwards;
+}
+
+.sprintright{
+  animation: sprintright 5 forwards;
 }
 
 @keyframes  jump {
@@ -69,4 +77,20 @@ body{
 left: -20%;
   }
 }
+
+@keyframes  sprintleft {
+  0%{
+
+  }
+
+  100%{
+left: 50%;
+  }
+}
+
+@keyframes sprintright {
+  
+} 
+
+
 
